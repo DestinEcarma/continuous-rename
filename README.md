@@ -24,7 +24,7 @@ Install using `cargo`:
 cargo install continuous-rename
 ```
 
-Install from source:
+Build from source:
 
 ```sh
 git clone https://github.com/DestinEcarma/continuous-rename.git
