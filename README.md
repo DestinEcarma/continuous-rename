@@ -30,5 +30,5 @@ Install from source:
 git clone https://github.com/DestinEcarma/continuous-rename.git
 cd continuous-rename
 cargo build --release
-mv target/release/continuous-rename/usr/local/bin
+mv target/release/continuous-rename /usr/local/bin
 ```
