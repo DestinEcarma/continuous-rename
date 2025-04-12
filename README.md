@@ -15,3 +15,20 @@ This will then query for confirmation before renaming the files. If you want to 
 ```sh
 continuous-rename path/to/folder pattern-{} -y
 ```
+
+## Installation
+
+Install using `cargo`:
+
+```sh
+cargo install continuous-rename
+```
+
+Install from source:
+
+```sh
+git clone https://github.com/DestinEcarma/continuous-rename.git
+cd continuous-rename
+cargo build --release
+mv target/release/continuous-rename/usr/local/bin
+```
