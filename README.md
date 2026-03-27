@@ -4,7 +4,7 @@ A small CLI for batch-renaming files in a directory using continuous numbers.
 
 It renames files into a predictable sequence like `1.png`, `2.png`, or custom names such as `photo-001.jpg`, `photo-002.jpg`, and so on.
 
-> [!Notes]
+> [!NOTES]
 >
 > - This tool renames files in a single directory only
 > - It does not recurse into subdirectories
