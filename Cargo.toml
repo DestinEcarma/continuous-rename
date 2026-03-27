@@ -1,6 +1,6 @@
 [package]
 name = "continuous-rename"
-version = "1.1.0"
+version = "1.1.1"
 edition = "2024"
 description = "A command-line tool to batch rename files in a folder/directory using a numbered pattern."
 license = "MIT"
