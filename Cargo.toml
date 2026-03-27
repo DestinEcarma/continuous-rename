@@ -1,21 +1,29 @@
 [package]
 name = "continuous-rename"
-version = "1.0.0"
-edition = "2021"
-authors = ["Destin Ecarma <109215379+DestinEcarma@users.noreply.github.com>"]
-license = "MIT"
+version = "1.1.0"
+edition = "2024"
 description = "A command-line tool to batch rename files in a folder/directory using a numbered pattern."
+license = "MIT"
+authors = ["Destin Ecarma"]
 readme = "README.md"
+homepage = "https://github.com/DestinEcarma/continuous-rename"
 repository = "https://github.com/DestinEcarma/continuous-rename"
 keywords = ["cli", "rename", "files"]
 categories = ["command-line-utilities"]
 
-[[bin]]
-name = "continuous-rename"
-path = "src/main.rs"
-
 [dependencies]
-anyhow = "1.0.97"
-clap = { version = "4.5.36", features = ["derive"] }
-dialoguer = "0.11.0"
-regex = "1.11.1"
+anyhow = "1.0.102"
+clap = { version = "4.6.0", features = ["derive"] }
+dialoguer = "0.12.0"
+once_cell = "1.21.4"
+regex = "1.12.3"
+
+[dev-dependencies]
+tempfile = "3.27.0"
+
+[profile.release]
+opt-level = "z"
+lto = true
+codegen-units = 1
+strip = "symbols"
+panic = "abort"
